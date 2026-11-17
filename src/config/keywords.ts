@@ -20,7 +20,7 @@ export const NOINDEX_CANNIBALISM_SKIP = new Set(['/404/']);
 
 export const PRODUCT_H1: Record<string, string> = {
   'bo7-hack': 'Black Ops 7 Hacks',
-  spoofer: 'Call of Duty Spoof and Black Ops 7 HWID Spoofer',
+  spoofer: 'Call of Duty Spoof: Black Ops 7 HWID Spoofer',
   ugc: 'Black Ops 7 Unban Tool',
 };
 

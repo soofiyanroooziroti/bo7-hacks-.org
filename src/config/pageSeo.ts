@@ -17,7 +17,7 @@ export const PAGE_SEO: Record<string, PageSeoEntry> = {
     "description": "Explore Black Ops 7 hacks with Aimbot, ESP, Wallhack, Radar, Triggerbot, No recoil control, Speed and Stream-proof. Compare monthly and lifetime plans."
   },
   "/product/spoofer/": {
-    "title": "Call of Duty Spoof | Black Ops 7 HWID Spoofer Plans",
+    "title": "Call of Duty Spoof: Black Ops 7 HWID Spoofer Plans",
     "description": "Review Call of Duty spoof and Black Ops 7 HWID spoofer plans for Windows PC. Read hardware limitations, requirements and setup guidance before checkout."
   },
   "/product/ugc/": {
