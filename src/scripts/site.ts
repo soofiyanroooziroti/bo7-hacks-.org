@@ -243,14 +243,17 @@ function scheduleSearchQueryHighlight() {
 let heroBootstrapScheduled = false;
 
 function scheduleHeroEmbla() {
-  if (heroBootstrapScheduled) return;
-  const wraps = document.querySelectorAll('[data-hero-embla-wrap]');
-  if (!wraps.length) return;
-  heroBootstrapScheduled = true;
-
   const run = () => {
     void import('./hero-embla.ts').then((m) => m.setupHeroEmbla());
   };
+
+  if (!heroBootstrapScheduled) {
+    heroBootstrapScheduled = true;
+    run();
+  }
+
+  const wraps = document.querySelectorAll('[data-hero-embla-wrap]');
+  if (!wraps.length) return;
 
   const start = () => {
     if ('requestIdleCallback' in window) {

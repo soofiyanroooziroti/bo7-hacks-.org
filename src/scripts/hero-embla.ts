@@ -50,12 +50,9 @@ function bindHeroDots(
   if (!dotsRoot) return { stop: () => undefined };
 
   const dots = Array.from(dotsRoot.querySelectorAll<HTMLButtonElement>('[data-hero-embla-dot]'));
+  const progressBars = dots.map((dot) => dot.querySelector<HTMLElement>('[data-hero-embla-progress]'));
+  const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
   let progressRaf = 0;
-
-  const activeProgress = () => {
-    const index = api.selectedScrollSnap();
-    return dots[index]?.querySelector<HTMLElement>('[data-hero-embla-progress]');
-  };
 
   const stopProgressLoop = () => {
     cancelAnimationFrame(progressRaf);
@@ -63,10 +60,9 @@ function bindHeroDots(
   };
 
   const tickProgress = () => {
-    const progress = activeProgress();
+    const progress = progressBars[api.selectedScrollSnap()];
     if (progress) {
-      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      if (reducedMotion) {
+      if (motionPreference.matches) {
         applyProgressScale(progress, 1);
       } else if (autoplay.isPlaying()) {
         const remaining = autoplay.timeUntilNext();
@@ -86,10 +82,7 @@ function bindHeroDots(
 
   const syncProgress = () => {
     const index = api.selectedScrollSnap();
-    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-    dots.forEach((dot, i) => {
-      const progress = dot.querySelector<HTMLElement>('[data-hero-embla-progress]');
+    progressBars.forEach((progress, i) => {
       if (!progress) return;
 
       progress.classList.remove('hero-embla-progress--running', 'hero-embla-progress--paused', 'hero-embla-progress--filled');
@@ -99,7 +92,7 @@ function bindHeroDots(
         return;
       }
 
-      if (reducedMotion) {
+      if (motionPreference.matches) {
         progress.classList.add('hero-embla-progress--filled');
         applyProgressScale(progress, 1);
         return;
@@ -122,11 +115,13 @@ function bindHeroDots(
   const resetAutoplayTimer = () => {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     if (autoplay.isPlaying()) autoplay.reset();
+    else if (!document.hidden) autoplay.play();
   };
 
   dots.forEach((dot) => {
     const index = Number(dot.getAttribute('data-hero-embla-dot'));
     dot.addEventListener('click', () => {
+      if (autoplay.isPlaying()) autoplay.stop();
       api.scrollTo(index);
       resetAutoplayTimer();
     });
@@ -215,6 +210,14 @@ function bindHeroAutoplayPause(
     if (next instanceof Node && wrapper.contains(next)) return;
     resume();
   });
+
+  if (wrapper.dataset.heroVisibilityBound !== 'true') {
+    wrapper.dataset.heroVisibilityBound = 'true';
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) pause();
+      else resume();
+    });
+  }
 }
 
 function bindDragUX(viewport: HTMLElement, api: EmblaCarouselType) {
@@ -251,6 +254,87 @@ function bindDragUX(viewport: HTMLElement, api: EmblaCarouselType) {
   );
 }
 
+function initNativeHero(wrapper: HTMLElement, viewport: HTMLElement) {
+  const slides = Array.from(viewport.querySelectorAll<HTMLElement>('[data-slot="carousel-item"]'));
+  const dots = Array.from(wrapper.querySelectorAll<HTMLButtonElement>('[data-hero-embla-dot]'));
+  const thumbs = Array.from(wrapper.querySelectorAll<HTMLButtonElement>('[data-hero-embla-thumb]'));
+  if (!slides.length) return;
+  wrapper.dataset.nativeCarousel = 'true';
+  let selected = 0;
+  let autoplayTimer = 0;
+
+  const scrollToSlide = (index: number) => {
+    selected = (index + slides.length) % slides.length;
+    viewport.scrollTo({
+      left: selected * viewport.clientWidth,
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth',
+    });
+  };
+  const update = () => {
+    selected = Math.round(viewport.scrollLeft / Math.max(viewport.clientWidth, 1));
+    [...dots, ...thumbs].forEach((button) => {
+      const index = Number(button.dataset.heroEmblaDot ?? button.dataset.heroEmblaThumb);
+      const active = index === selected;
+      button.dataset.active = String(active);
+      button.setAttribute('aria-selected', String(active));
+    });
+  };
+
+  const resetAutoplay = () => {
+    window.clearInterval(autoplayTimer);
+    autoplayTimer = 0;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const schedule = () => {
+      autoplayTimer = window.setInterval(() => {
+        if (document.hidden) return;
+        scrollToSlide(selected + 1);
+      }, HERO_AUTOPLAY_MS);
+    };
+    schedule();
+  };
+
+  viewport.addEventListener('scroll', update, { passive: true });
+  dots.forEach((button, index) =>
+    button.addEventListener('click', () => {
+      scrollToSlide(index);
+      resetAutoplay();
+    }),
+  );
+  thumbs.forEach((button, index) =>
+    button.addEventListener('click', () => {
+      scrollToSlide(index);
+      resetAutoplay();
+    }),
+  );
+  wrapper.querySelector('[data-sw-carousel-previous]')?.addEventListener('click', (event) => {
+    event.preventDefault();
+    scrollToSlide(selected - 1);
+    resetAutoplay();
+  });
+  wrapper.querySelector('[data-sw-carousel-next]')?.addEventListener('click', (event) => {
+    event.preventDefault();
+    scrollToSlide(selected + 1);
+    resetAutoplay();
+  });
+  viewport.tabIndex = 0;
+  viewport.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {
+      event.preventDefault();
+      scrollToSlide(selected + (event.key === 'ArrowRight' ? 1 : -1));
+      resetAutoplay();
+    }
+  });
+  wrapper.addEventListener('mouseenter', () => window.clearInterval(autoplayTimer));
+  wrapper.addEventListener('mouseleave', resetAutoplay);
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) window.clearInterval(autoplayTimer);
+    else resetAutoplay();
+  });
+  wrapper.dataset.heroEmblaInited = 'true';
+  update();
+  resetAutoplay();
+}
+
 function initHeroCarousels(root: ParentNode = document) {
   const wraps = [...root.querySelectorAll<HTMLElement>('[data-hero-embla-wrap]')].filter(
     (wrapper) => wrapper.dataset.heroEmblaInited !== 'true',
@@ -270,6 +354,11 @@ function initHeroCarousels(root: ParentNode = document) {
         carouselRoot.querySelector<HTMLElement>('[data-sw-carousel-viewport]');
       if (!viewport) {
         console.error('Hero Embla failed to initialize: viewport element not found');
+        return;
+      }
+
+      if (window.matchMedia('(max-width: 1023px)').matches) {
+        initNativeHero(wrapper, viewport);
         return;
       }
 
@@ -308,7 +397,10 @@ function initHeroCarousels(root: ParentNode = document) {
       const progress = bindHeroDots(wrapper, api, autoplay);
       bindHeroThumbs(wrapper, api);
       const resetAutoplayTimer = () => {
-        if (autoplay && !reducedMotion && autoplay.isPlaying()) autoplay.reset();
+        if (!autoplay || reducedMotion) return;
+        if (autoplay.isPlaying()) autoplay.stop();
+        autoplay.reset();
+        if (!document.hidden) autoplay.play();
       };
       bindArrows(carouselRoot, api, resetAutoplayTimer);
       bindHeroSlideImages(viewport);

@@ -948,3 +948,40 @@ html:not(.dark) .deployment-status-strip__cta {
   content-visibility: auto;
   contain-intrinsic-size: auto 720px;
 }
+
+@media (max-width: 1023px) {
+  [data-native-carousel] [data-hero-embla-viewport] {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    touch-action: pan-x pan-y;
+  }
+  [data-native-carousel] [data-slot='carousel-container'] {
+    margin-left: 0;
+    transform: none;
+  }
+  [data-native-carousel] [data-slot='carousel-item'] {
+    padding-left: 0;
+    scroll-snap-align: start;
+  }
+  [data-native-carousel] .hero-embla-slide-figure {
+    aspect-ratio: var(--hero-native-aspect);
+  }
+}
+
+.hero-embla-dot {
+  min-width: 24px;
+  min-height: 24px;
+  border: 8px solid transparent;
+  background-clip: padding-box;
+}
+
+.hero-embla-dot[data-active='true'] {
+  min-width: 40px;
+}
+
+.hero-embla-dot .hero-embla-progress {
+  inset-block: 8px;
+  left: 8px;
+  width: calc(100% - 16px);
+}

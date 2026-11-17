@@ -50,6 +50,7 @@ const imageWidths = isHero ? HERO_IMAGE_WIDTHS : undefined;
     desktopOnly && 'hidden lg:block',
   ]}
   id={id}
+  style={images[0]?.width && images[0]?.height ? `--hero-native-aspect: ${images[0].width} / ${images[0].height}` : undefined}
   data-hero-embla-wrap={isHero || undefined}
   data-hero-no-autoplay={isHero && noAutoplay ? 'true' : undefined}
 >
@@ -172,7 +173,7 @@ const imageWidths = isHero ? HERO_IMAGE_WIDTHS : undefined;
             <button
               type="button"
               role="tab"
-              class="hero-embla-dot relative h-2 shrink-0 overflow-hidden rounded-full bg-white/30 transition-[width] duration-300 data-[active=false]:w-2 data-[active=true]:w-9"
+              class="hero-embla-dot relative shrink-0 overflow-hidden rounded-full bg-white/30 transition-[width] duration-300"
               data-hero-embla-dot={i}
               aria-label={`Slide ${i + 1}`}
               aria-selected={i === 0 ? 'true' : 'false'}
