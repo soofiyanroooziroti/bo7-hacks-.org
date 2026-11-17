@@ -856,32 +856,42 @@ html:not(.dark) .deployment-status-strip__cta {
 }
 
 
-.hero-embla-progress {
-  width: 0%;
-  height: 100%;
-  background: var(--primary);
-  will-change: width;
+/* Carousel dot fill uses ::after on the active pill; inner span is decorative fallback only. */
+.hero-embla-dot .hero-embla-progress {
+  display: none !important;
 }
 
-@keyframes hero-embla-progress-fill {
+@keyframes hero-embla-dot-fill {
   from {
-    width: 0%;
+    width: 0;
   }
   to {
     width: 100%;
   }
 }
 
-.hero-embla-progress--running {
-  animation: hero-embla-progress-fill var(--hero-autoplay-ms, 5000ms) linear forwards;
+.hero-embla-dot[data-active='true'].hero-embla-dot--animate::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  border-radius: inherit;
+  background: var(--primary);
+  animation: hero-embla-dot-fill var(--hero-autoplay-ms, 5000ms) linear forwards;
+  will-change: width;
 }
 
-.hero-embla-progress--running.hero-embla-progress--paused {
-  animation-play-state: paused;
-}
-
-.hero-embla-progress--filled {
+.hero-embla-dot[data-active='true'].hero-embla-dot--filled::after {
   width: 100%;
+  animation: none;
+}
+
+[data-hero-embla-wrap][data-hero-carousel-paused='true']
+  .hero-embla-dot[data-active='true'].hero-embla-dot--animate::after,
+[data-hero-embla-wrap]:hover .hero-embla-dot[data-active='true'].hero-embla-dot--animate::after {
+  animation-play-state: paused;
 }
 
 [data-hero-embla-viewport] {
@@ -929,11 +939,8 @@ html:not(.dark) .deployment-status-strip__cta {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero-embla-progress {
+  .hero-embla-dot[data-active='true'].hero-embla-dot--animate::after {
     animation: none !important;
-  }
-
-  .hero-embla-progress--filled {
     width: 100%;
   }
 }
@@ -970,19 +977,16 @@ html:not(.dark) .deployment-status-strip__cta {
 }
 
 .hero-embla-dot {
+  position: relative;
+  overflow: hidden;
   min-width: 24px;
   min-height: 24px;
   border: 8px solid transparent;
   background-clip: padding-box;
+  background-color: color-mix(in oklch, var(--muted-foreground) 50%, transparent) !important;
 }
 
 .hero-embla-dot[data-active='true'] {
   min-width: 40px;
-}
-
-.hero-embla-dot .hero-embla-progress {
-  inset-block: 0;
-  left: 0;
-  height: 100%;
-  max-width: 100%;
+  background-color: color-mix(in oklch, var(--muted-foreground) 55%, black) !important;
 }

@@ -26,22 +26,11 @@ function createDotProgressController(wrapper: HTMLElement): DotProgressControlle
   wrapper.style.setProperty('--hero-autoplay-ms', `${HERO_AUTOPLAY_MS}ms`);
 
   const dots = Array.from(dotsRoot.querySelectorAll<HTMLButtonElement>('[data-hero-embla-dot]'));
-  const progressBars = dots.map((dot) => dot.querySelector<HTMLElement>('[data-hero-embla-progress]'));
-  let autoplayPaused = false;
 
-  const restartProgress = (progress: HTMLElement) => {
-    progress.classList.remove('hero-embla-progress--running', 'hero-embla-progress--paused', 'hero-embla-progress--filled');
-    progress.style.removeProperty('width');
-    progress.style.removeProperty('transform');
-
-    if (prefersReducedMotion()) {
-      progress.classList.add('hero-embla-progress--filled');
-      return;
-    }
-
-    void progress.offsetWidth;
-    progress.classList.add('hero-embla-progress--running');
-    if (autoplayPaused) progress.classList.add('hero-embla-progress--paused');
+  const restartActiveDot = (dot: HTMLButtonElement) => {
+    dot.classList.remove('hero-embla-dot--animate');
+    void dot.offsetWidth;
+    dot.classList.add('hero-embla-dot--animate');
   };
 
   const refresh = (selectedIndex: number) => {
@@ -49,24 +38,19 @@ function createDotProgressController(wrapper: HTMLElement): DotProgressControlle
       const active = i === selectedIndex;
       dot.dataset.active = active ? 'true' : 'false';
       dot.setAttribute('aria-selected', active ? 'true' : 'false');
-    });
-
-    progressBars.forEach((progress, i) => {
-      if (!progress) return;
-      progress.classList.remove('hero-embla-progress--running', 'hero-embla-progress--paused', 'hero-embla-progress--filled');
-      progress.style.removeProperty('width');
-      progress.style.removeProperty('transform');
-      if (i !== selectedIndex) return;
-      restartProgress(progress);
+      dot.classList.remove('hero-embla-dot--animate', 'hero-embla-dot--filled');
+      if (!active) return;
+      if (prefersReducedMotion()) {
+        dot.classList.add('hero-embla-dot--filled');
+        return;
+      }
+      restartActiveDot(dot);
     });
   };
 
   const setAutoplayPaused = (paused: boolean) => {
-    autoplayPaused = paused;
-    const selectedIndex = dots.findIndex((dot) => dot.dataset.active === 'true');
-    const progress = selectedIndex >= 0 ? progressBars[selectedIndex] : null;
-    if (!progress || prefersReducedMotion()) return;
-    progress.classList.toggle('hero-embla-progress--paused', paused);
+    if (paused) wrapper.dataset.heroCarouselPaused = 'true';
+    else delete wrapper.dataset.heroCarouselPaused;
   };
 
   return { refresh, setAutoplayPaused, stop: () => undefined };
