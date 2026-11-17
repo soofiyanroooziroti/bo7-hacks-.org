@@ -1,0 +1,940 @@
+{
+  "site": {
+    "name": "BO7 Hacks",
+    "domain": "bo7hacks.org",
+    "title": "bo7 hacks",
+    "description": "BO7 Hacks for Call of Duty: Black Ops 7 on Windows PC.",
+    "discord": "https://discord.com/invite/2gMnnaPWq"
+  },
+  "nav": [
+    {
+      "href": "/",
+      "label": "Home"
+    },
+    {
+      "href": "/products/",
+      "label": "Products"
+    },
+    {
+      "href": "/product/bo7-hack/#features",
+      "label": "Features"
+    },
+    {
+      "href": "/blog/",
+      "label": "Blog"
+    },
+    {
+      "href": "/forum/",
+      "label": "Forum"
+    },
+    {
+      "href": "/faq/",
+      "label": "FAQ"
+    },
+    {
+      "href": "/support/",
+      "label": "Support"
+    }
+  ],
+  "headerNavLabels": {
+    "home": "Homepage",
+    "products": "Product catalog",
+    "features": "Feature list",
+    "blog": "Guide archive",
+    "forum": "Community threads",
+    "faq": "Checkout questions",
+    "support": "Help desk"
+  },
+  "navMore": "More",
+  "navShort": {
+    "home": "Home",
+    "products": "Products",
+    "features": "Features",
+    "blog": "Blog",
+    "forum": "Forum",
+    "faq": "FAQ",
+    "support": "Support"
+  },
+  "hero": {
+    "status": "Black Ops 7 — modules online",
+    "eyebrow": "Windows PC",
+    "titleLine1": "BO7 Hacks",
+    "titleLine2": "Black Ops 7 Hacks",
+    "subtitle": "BO7 Hacks for Call of Duty: Black Ops 7 on Windows PC.",
+    "ctaPrimary": "View products",
+    "ctaDiscord": "Buy now",
+    "modesLabel": "Modes",
+    "modes": [
+      "Multiplayer",
+      "Zombies",
+      "Windows PC"
+    ],
+    "metrics": [
+      {
+        "label": "Anti-cheat",
+        "strong": "RICOCHET"
+      },
+      {
+        "label": "Platform",
+        "strong": "Windows PC"
+      },
+      {
+        "label": "Plans",
+        "strong": "$35 / $150"
+      },
+      {
+        "label": "Support",
+        "strong": "Online"
+      }
+    ]
+  },
+  "features": {
+    "eyebrow": "Features",
+    "title": "Black Ops 7 features",
+    "subtitle": "Explore the available Black Ops 7 features for Windows PC.",
+    "seeAllLabel": "See all features",
+    "items": [
+      {
+        "title": "Aimbot",
+        "subtitle": "Aim assistance options."
+      },
+      {
+        "title": "ESP",
+        "subtitle": "Player information overlays."
+      },
+      {
+        "title": "Triggerbot",
+        "subtitle": "Trigger-based firing options."
+      },
+      {
+        "title": "No recoil control for perfect shots",
+        "subtitle": "Recoil control options for consistent shots."
+      },
+      {
+        "title": "Wallhack",
+        "subtitle": "Visual awareness options."
+      },
+      {
+        "title": "Radar",
+        "subtitle": "Radar information."
+      },
+      {
+        "title": "Speed",
+        "subtitle": "Movement speed options."
+      },
+      {
+        "title": "Stream-proof",
+        "subtitle": "Stream-proof display options."
+      }
+    ]
+  },
+  "whyUs": {
+    "eyebrow": "Why us",
+    "title": "Black Ops 7 tooling backed by patches—not promises",
+    "subtitle": "One cheat product, one HWID spoofer, and one UGC recovery workspace. The cheat and UGC are $35 monthly or $150 lifetime; the spoofer is $50 monthly or $150 lifetime. A ban is still possible under RICOCHET.",
+    "usLabel": "BO7 Hacks",
+    "otherLabel": "Typical provider",
+    "rows": [
+      {
+        "title": "Patch-day loader updates",
+        "desc": "Check bo7hacks.org after a Black Ops 7 or RICOCHET update before you open the loader."
+      },
+      {
+        "title": "Eight listed gameplay features",
+        "desc": "Review Aimbot, ESP, Wallhack, Radar, Triggerbot, No recoil control, Speed and Stream-proof."
+      },
+      {
+        "title": "Loader and config help",
+        "desc": "Setup questions cover the Windows loader, saved configs, and which product matches a hardware flag versus an account case."
+      },
+      {
+        "title": "Separate product checkouts",
+        "desc": "The cheat, the HWID spoofer, and UGC recovery stay separate checkouts. Lifetime on the cheat does not add the spoofer."
+      },
+      {
+        "title": "Saved configs",
+        "desc": "Keep the eight listed gameplay tools together in one Windows PC product."
+      },
+      {
+        "title": "HWID is its own product",
+        "desc": "A machine that fails new accounts is the spoofer case. An account-only restriction is the UGC case. Neither is included with the cheat key."
+      }
+    ],
+    "metrics": [
+      {
+        "value": "RICOCHET",
+        "title": "Check after a patch",
+        "desc": "Recheck the site after a Black Ops 7 or RICOCHET update before you launch."
+      },
+      {
+        "value": "2",
+        "title": "Plans on every card",
+        "desc": "Monthly is $35 for 30 days. Lifetime is $150. There is no weekly plan."
+      },
+      {
+        "value": "3",
+        "title": "Separate products",
+        "desc": "BO7 Hacks, the HWID spoofer, and UGC recovery. Each one is its own key."
+      }
+    ]
+  },
+  "setup": {
+    "eyebrow": "Setup guide",
+    "titleLead": "From checkout to Black Ops 7 in",
+    "titleHighlight": "three simple steps",
+    "intro": "Check the site after an RICOCHET update before you launch Black Ops 7.",
+    "ctaPrimary": "View products",
+    "ctaSecondary": "Setup FAQ",
+    "ctaPrimaryHref": "/products/",
+    "ctaSecondaryHref": "/faq/",
+    "statusStrip": {
+      "aceStatusCta": "Check RICOCHET status",
+      "aceStatusHref": "/status/",
+      "perks": [
+        {
+          "icon": "instantDelivery",
+          "label": "Instant delivery"
+        },
+        {
+          "icon": "refresh",
+          "label": "Lifetime updates"
+        }
+      ]
+    },
+    "steps": [
+      {
+        "step": "Step 1",
+        "title": "Unlock portal & download loader",
+        "desc": "Complete checkout, open your operator dashboard, and pull the latest patch loader build for Windows."
+      },
+      {
+        "step": "Step 2",
+        "title": "Launch & configure modules",
+        "desc": "Run the loader, then tune the listed gameplay features one at a time."
+      },
+      {
+        "step": "Step 3",
+        "title": "Check status, then launch",
+        "desc": "Confirm the site is current for this client, then open Black Ops 7 with the config you saved."
+      }
+    ]
+  },
+  "compatibility": {
+    "eyebrow": "Platform support",
+    "title": "Runs on your rig.",
+    "subtitle": "Check the site after a Black Ops 7 or RICOCHET update before you launch.",
+    "items": [
+      "Windows 10 & 11",
+      "Intel or AMD",
+      "HVCI on",
+      "Core isolation on",
+      "TPM on",
+      "Secure boot on",
+      "support",
+      "Config save"
+    ]
+  },
+  "cheats": {
+    "eyebrow": "Game cheat",
+    "title": "Black Ops 7 Hacks",
+    "subtitle": "Black Ops 7 features for Windows PC.",
+    "viewAll": "View details",
+    "explore": "Explore",
+    "items": [
+      {
+        "badge": "Active",
+        "tier": "Loader",
+        "name": "Black Ops 7",
+        "title": "Black Ops 7 Hacks",
+        "desc": "Black Ops 7 hacks for Windows PC with eight feature options.",
+        "features": [
+          "Aimbot",
+          "ESP",
+          "Triggerbot",
+          "No recoil control for perfect shots",
+          "Wallhack",
+          "Radar",
+          "Speed",
+          "Stream-proof"
+        ],
+        "href": "/product/bo7-hack/",
+        "variant": "popular"
+      }
+    ]
+  },
+  "products": {
+    "eyebrow": "Products",
+    "addOnsHeading": "Add-ons",
+    "catalogHeading": "bo7 hacks price",
+    "title": "BO7 Hacks plans",
+    "subtitle": "bo7 hacks price and plans for Windows PC. Compare the available product options before checkout.",
+    "viewAll": "View details",
+    "get": "Buy now",
+    "explore": "Explore",
+    "items": [
+      {
+        "badge": "Active",
+        "category": "HWID spoofer",
+        "title": "Black Ops 7 HWID Spoofer",
+        "subtitle": "Hardware ID recovery",
+        "desc": "Black Ops 7 hwid spoofer with cleaner—rotate disk, MAC, and GPU IDs after hardware flags. $50 monthly or $150 lifetime.",
+        "features": [
+          "Hardware spoofer + cleaner",
+          "Compatibility scan",
+          "Verification steps",
+          "Portal workflow"
+        ],
+        "href": "/product/spoofer/"
+      },
+      {
+        "badge": "Active",
+        "category": "Unban tool",
+        "title": "Black Ops 7 Unban Tool",
+        "subtitle": "Appeals & recovery",
+        "desc": "Black Ops 7 unban tool workspace—custom appeal workflows, templates, and restriction tracking.",
+        "features": [
+          "Windows 10 or 11 (64-bit) client",
+          "Black Ops 7 account appeal workspace",
+          "Evidence checklists for restriction cases",
+          "Automation for repetitive steps",
+          "Restriction tracking dashboard",
+          "Secure portal delivery"
+        ],
+        "href": "/product/ugc/"
+      }
+    ]
+  },
+  "blog": {
+    "eyebrow": "Blog",
+    "title": "Guides and updates",
+    "subtitle": "Black Ops 7 feature guides, PC setup notes, RICOCHET information and product comparisons.",
+    "latestTitle": "Black Ops 7 guides for badges, builds, and setup",
+    "latestSubtitle": "Filter by topic or sort to find setup guides, feature deep-dives, and patch-day notes.",
+    "filterAll": "All articles",
+    "sortLabel": "Sort by",
+    "sortNewest": "Newest first",
+    "sortOldest": "Oldest first",
+    "sortShortRead": "Shortest read",
+    "sortLongRead": "Longest read",
+    "emptyFilter": "No articles match this filter.",
+    "emptyCatalog": "New guides will be added here when topics are ready.",
+    "viewAll": "View all articles",
+    "read": "Read",
+    "items": [],
+    "minRead": "min read",
+    "filterByTopicAria": "Filter articles by topic",
+    "continueReadingAria": "Continue reading",
+    "tagLabels": {
+      "Review": "Review",
+      "Install": "Install",
+      "Safety": "",
+      "Plans": "Plans",
+      "Aim": "Aim",
+      "ESP": "ESP",
+      "Loot": "Loot",
+      "Visuals": "Visuals",
+      "Camera": "Camera"
+    }
+  },
+  "toolkit": {
+    "eyebrow": "Software",
+    "title": "Organized, easy to configure",
+    "subtitle": "Every module matches the loader groups on the cheat product page.",
+    "items": [
+      {
+        "num": "01",
+        "label": "Main",
+        "title": "Gameplay features",
+        "desc": "Aimbot, ESP, Wallhack and Radar help explain the core gameplay tools."
+      },
+      {
+        "num": "02",
+        "label": "Features",
+        "title": "Additional features",
+        "desc": "No recoil control, Triggerbot, Speed and Stream-proof complete the feature list."
+      },
+      {
+        "num": "03",
+        "label": "Config",
+        "title": "Config Options",
+        "desc": "Create, load, save, and delete configs from the menu."
+      }
+    ]
+  },
+  "workflow": {
+    "eyebrow": "How it works",
+    "badge": "4 easy steps",
+    "titleBefore": "From status check to",
+    "titleHighlight": "saved profile.",
+    "subtitle": "A straight path from a status check to a saved Black Ops 7 config.",
+    "ctaLabel": "View products",
+    "ctaHref": "/products/",
+    "ctaSecondary": "Setup FAQ",
+    "ctaSecondaryHref": "/faq/",
+    "items": [
+      {
+        "num": "01",
+        "phase": "Before purchase",
+        "title": "Check RICOCHET status",
+        "desc": "Read bo7hacks.org after a client or RICOCHET update before you buy or launch."
+      },
+      {
+        "num": "02",
+        "phase": "Checkout",
+        "title": "Choose the product",
+        "desc": "BO7 Hacks and UGC are $35 monthly. The HWID spoofer is $50 monthly. Lifetime is $150 on each product. They are separate keys."
+      },
+      {
+        "num": "03",
+        "phase": "Loader",
+        "title": "Launch & configure",
+        "desc": "Download from the portal. Leave HVCI, core isolation, TPM, and secure boot on."
+      },
+      {
+        "num": "04",
+        "phase": "In-game",
+        "title": "Save your profile",
+        "desc": "Review your Aimbot, ESP, Radar and other listed feature settings before play."
+      }
+    ]
+  },
+  "fieldNotes": {
+    "eyebrow": "Field notes",
+    "title": "Built for Black Ops 7 on Windows PC.",
+    "items": [
+      {
+        "num": "01",
+        "title": "Patch-day check",
+        "desc": "Read the site after an RICOCHET or client update. A banner from yesterday is not a current build."
+      },
+      {
+        "num": "02",
+        "title": "Review each feature",
+        "desc": "Review one listed feature at a time so you can distinguish its role from the rest of the package."
+      },
+      {
+        "num": "03",
+        "title": "Separate products",
+        "desc": "The cheat, the HWID spoofer, and UGC recovery are three checkouts. Lifetime on one does not unlock the others."
+      }
+    ]
+  },
+  "support": {
+    "eyebrow": "Support",
+    "title": "Black Ops 7 support: loader, checkout, and HWID PC",
+    "subtitle": "Support for the loader, checkout, and HWID spoofer. Include your order ID from checkout and the exact loader text.",
+    "channels": [
+      {
+        "icon": "users",
+        "title": "Chat before checkout",
+        "desc": "Ask about the cheat, the spoofer, or UGC before you pay.",
+        "linkLabel": "Start checkout",
+        "href": "/go/bo7-hack/"
+      },
+      {
+        "icon": "messageCircle",
+        "title": "Community forum",
+        "desc": "Example discussions about Black Ops 7 features and gameplay, with linked blog guides.",
+        "linkLabel": "Open the forum",
+        "href": "/forum/"
+      },
+      {
+        "icon": "navFaq",
+        "title": "Read the FAQ",
+        "desc": "Compatibility, bans and setup—before you buy.",
+        "linkLabel": "View all FAQ",
+        "href": "/faq/"
+      },
+      {
+        "icon": "clock",
+        "title": "Live operators",
+        "desc": "support for setup and checkout.",
+        "linkLabel": "Open contact page",
+        "href": "/support/"
+      }
+    ],
+    "ticketTitle": "Include in your ticket",
+    "ticketItems": [
+      {
+        "title": "Order ID",
+        "desc": "The ID shown on your Zadeyo receipt after checkout."
+      },
+      {
+        "title": "Platform",
+        "desc": "Windows 10 or 11, and whether HVCI, core isolation, TPM, and secure boot are on."
+      },
+      {
+        "title": "Error detail",
+        "desc": "The exact loader message, not a paraphrase."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Straight answers before checkout.",
+    "subtitle": "Compatibility, bans and access—no vague promises.",
+    "filterTopics": {
+      "all": "All",
+      "plans": "Plans",
+      "esp": "Cheat modules",
+      "scripts": "Scripts",
+      "safety": "Safety",
+      "products": "Products",
+      "blog": "Blog",
+      "setup": "Setup"
+    }
+  },
+  "footer": {
+    "tagline": "BO7 Hacks, HWID spoofer, and Black Ops 7 Unban Tool for Windows PC. bo7hacks.org",
+    "explore": "Explore",
+    "exploreLinks": [
+      {
+        "href": "/",
+        "label": "Feature overview",
+        "ariaLabel": "Features",
+        "scrollTarget": "features"
+      },
+      {
+        "href": "/product/bo7-hack/",
+        "label": "Loader feature page",
+        "ariaLabel": "Loader feature page"
+      },
+      {
+        "href": "/products/",
+        "label": "All products",
+        "ariaLabel": "Products"
+      },
+      {
+        "href": "/faq/",
+        "label": "Pre-purchase FAQ",
+        "ariaLabel": "FAQ"
+      }
+    ],
+    "support": "Contact the team",
+    "legal": "Legal",
+    "moreSites": "More sites",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "about": "About",
+    "resourceLinks": [
+      {
+        "label": "Blog archive",
+        "ariaLabel": "Blog"
+      },
+      {
+        "label": "Windows loader",
+        "ariaLabel": "Windows loader"
+      },
+      {
+        "label": "Products & utilities",
+        "ariaLabel": "Products"
+      }
+    ]
+  },
+  "legalPages": {
+    "about": {
+      "title": "About this Black Ops 7 store",
+      "description": "bo7hacks.org sells BO7 Hacks, an HWID spoofer, and UGC account recovery for Windows PC, with setup notes and honest ban risk.",
+      "sections": [
+        {
+          "heading": "Who we are",
+          "paragraphs": [
+            "bo7hacks.org is a Windows PC store for BO7 Hacks, Black Ops 7 HWID Spoofer, and Black Ops 7 Unban Tool. The cheat is one product with Aimbot, ESP, Wallhack, Radar, Triggerbot, No recoil control, Speed and Stream-proof. It is not a ladder of Lite, Pro, and Elite tiers, and it is not a DMA card.",
+            "The cheat and UGC are $35 for 30 days or $150 lifetime. The HWID spoofer is $50 for 30 days or $150 lifetime. A lifetime key on the cheat does not include the spoofer or the recovery workspace. Starting on a month does not promise a credit toward lifetime.",
+            "Product names on this site identify what we sell. They are not a claim that the game publisher endorses the software. Delivery is a portal download for Windows 10 or 11. You keep HVCI, core isolation, TPM, and secure boot on, then open the loader only when the site still matches the current client."
+          ]
+        },
+        {
+          "heading": "What we publish",
+          "paragraphs": [
+            "The [BO7 Hacks](/product/bo7-hack/) page lists the menu names and the Windows requirements: Windows 10 or 11, Intel or AMD, with HVCI, core isolation, TPM, and secure boot left on. The [products page](/products/) is where you compare the cheat, the [Black Ops 7 HWID Spoofer](/product/spoofer/), and [Black Ops 7 Unban Tool](/product/ugc/).",
+            "The [forum](/forum/) contains example discussions about Black Ops 7 features and gameplay, each connected to a blog guide. Read the [terms](/terms/) before checkout. Sales are final, including bans.",
+            "RICOCHET can still act on an account. Nothing here is a guarantee that a session stays clean after the next patch. Check this site after a client update before you open the loader. If the page is not current for that build, leave the software closed.",
+            "The [status page](/status/) shows the PC build and whether the loader is Ready, Updating, or Paused. Check the listed version after a game patch. Compatibility can change, and the status badge does not guarantee protection from account restrictions."
+          ]
+        },
+        {
+          "heading": "Support",
+          "paragraphs": [
+            "Loader errors, a key that will not move, and checkout questions go through the [support page](/support/). Include your order ID from checkout, Windows version, and the exact loader text. Do not turn HVCI, core isolation, TPM, or secure boot off because a chat message from another game said to.",
+            "Before opening a ticket, check which product and plan appear on your receipt. A delivery question, a loader error, and an account restriction need different information. Include the time the issue started and the exact message you saw. Keep passwords, payment details, and license keys out of public channels."
+          ]
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "How bo7hacks.org handles analytics, cookies, and contact data.",
+      "sections": [
+        {
+          "heading": "Information we collect",
+          "paragraphs": [
+            "We may collect standard web analytics such as page views, device type, browser, and approximate region through Google Analytics when enabled. Checkout and license delivery happen on external checkout pages. We do not store payment card data on bo7hacks.org."
+          ]
+        },
+        {
+          "heading": "How we use data",
+          "paragraphs": [
+            "Analytics help us understand which guides and product pages are useful so we can improve content and fix broken links. Support tickets may retain the Discord handle and message content you provide until the issue is resolved."
+          ]
+        },
+        {
+          "heading": "Cookies",
+          "paragraphs": [
+            "We use minimal cookies required for analytics. You can block cookies in your browser settings; core site content remains accessible without them."
+          ]
+        },
+        {
+          "heading": "Support",
+          "paragraphs": [
+            "For privacy questions, use the options on the Support page. Purchase and refund rules are in our Terms & Conditions."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "title": "Terms & Conditions",
+      "description": "Purchase, license, refund, and use terms for products sold on bo7hacks.org.",
+      "sections": [
+        {
+          "heading": "Agreement",
+          "paragraphs": [
+            "Last updated: October 2026. By using bo7hacks.org or completing checkout for any product listed here, you agree to these Terms & Conditions and our Privacy Policy."
+          ]
+        },
+        {
+          "heading": "What you purchase",
+          "paragraphs": [
+            "We sell BO7 Hacks, an HWID spoofer, and UGC account recovery. The cheat and UGC are $35 for 30 days or $150 lifetime; the HWID spoofer is $50 for 30 days or $150 lifetime. Each license is delivered through a portal and loader for Windows PC.",
+            "Feature lists on each product page describe what is included at the time of purchase. Modules can change when Black Ops 7 or RICOCHET updates. A lifetime cheat key does not include the spoofer or UGC."
+          ]
+        },
+        {
+          "heading": "Checkout and delivery",
+          "paragraphs": [
+            "Payment and license delivery run on external checkout pages. bo7hacks.org does not process or store payment card numbers.",
+            "After purchase, use the portal from your order to download the current loader before you launch Black Ops 7. Leave HVCI, core isolation, TPM, and secure boot on."
+          ]
+        },
+        {
+          "heading": "License use",
+          "paragraphs": [
+            "Licenses are for your personal use only. Do not share loader files, portal logins, or license keys. A hardware-ID problem is a separate HWID Spoofer purchase."
+          ]
+        },
+        {
+          "heading": "Refunds and purchases",
+          "paragraphs": [
+            "All sales are final once checkout completes. We do not refund change-of-mind purchases, account bans, RICOCHET penalties, or issues caused by ignoring the setup notes or launching while the site is not current for that patch.",
+            "If the product does not work as described on a supported setup—Windows 10 or 11 with HVCI, core isolation, TPM, and secure boot on, and the current loader from the portal—contact us through the Support page. Include your order ID from checkout Windows version, and the exact loader text.",
+            "We may, at our discretion, offer a fix, replacement access, or partial/full refund when we confirm a fault on our side. We are not obligated to approve every request."
+          ]
+        },
+        {
+          "heading": "Availability and risk",
+          "paragraphs": [
+            "Third-party tools for Black Ops 7 can conflict with game updates and RICOCHET. You use this software at your own risk, including possible account action.",
+            "Check the homepage status banner before every session. Do not launch Black Ops 7 while modules are offline or misaligned after a patch."
+          ]
+        },
+        {
+          "heading": "Changes",
+          "paragraphs": [
+            "We may update these terms. The “Last updated” date at the top will change when we do. Continued use of the site after changes means you accept the revised terms."
+          ]
+        },
+        {
+          "heading": "Support",
+          "paragraphs": [
+            "For terms, billing, or loader questions, use the buttons on the Support page. See also our Privacy Policy for how we handle site data."
+          ]
+        }
+      ]
+    },
+    "support": {
+      "title": "Black Ops 7 support",
+      "description": "Loader, HWID spoofer, UGC, and checkout help for bo7hacks.org."
+    }
+  },
+  "ui": {
+    "skipLink": "Skip to main content",
+    "browseCheats": "Try Now",
+    "browseCheatsMobile": "Start checkout",
+    "homeAria": "BO7 Hacks home",
+    "checkoutAria": "Start checkout",
+    "discordAria": "Buy BO7 Hacks",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "themeLight": "Switch to light mode",
+    "themeDark": "Switch to dark mode",
+    "searchPlaceholder": "Search products, guides, FAQ…",
+    "searchEmpty": "Type to search the site.",
+    "searchNoResults": "No results. Try another term.",
+    "searchCloseAria": "Close search",
+    "searchTitle": "Search",
+    "searchOpenAria": "Search site"
+  },
+  "language": {
+    "label": "Language",
+    "selectAria": "Select site language"
+  },
+  "exploreSection": {
+    "eyebrow": "Explore",
+    "title": "Everything on the site, one click",
+    "titleAccent": "away",
+    "subtitle": "Jump to products, patch notes, guides, and help without hunting the menu.",
+    "badgeProduct": "PRODUCT",
+    "badgeActive": "Active",
+    "cards": {
+      "cheats": {
+        "title": "BO7 Hacks",
+        "desc": "Gameplay features, Additional features, and Config for Windows PC."
+      },
+      "spoofer": {
+        "title": "HWID Spoofer",
+        "desc": "Hardware profile rotation after a machine flag."
+      },
+      "ugc": {
+        "title": "UGC Account Recovery",
+        "desc": "Appeal workspace for locked gaming accounts."
+      },
+      "plans": {
+        "title": "Plans",
+        "desc": "Compare 1 Month $35 and Lifetime $150."
+      },
+      "features": {
+        "title": "Features",
+        "desc": "Gameplay features, Additional features, and Config options."
+      },
+      "status": {
+        "title": "Status",
+        "desc": "Patch notes and portal update reminders."
+      },
+      "faq": {
+        "title": "FAQ",
+        "desc": "Plans, setup, RICOCHET risk, and products."
+      },
+      "support": {
+        "title": "Support",
+        "desc": "Loader, checkout, and portal help."
+      },
+      "blog": {
+        "title": "Blog",
+        "desc": "Black Ops 7 feature guides and PC setup notes."
+      },
+      "forum": {
+        "title": "Forum",
+        "desc": "Threads with marked developer replies."
+      }
+    }
+  },
+  "pricing": {
+    "checkout": "Checkout",
+    "purchaseOption": "Purchase option",
+    "selectSubscription": "Select subscription",
+    "recommended": "Recommended",
+    "bestValue": "Recommended",
+    "savePrefix": "Save",
+    "total": "Total",
+    "buyNow": "Buy now",
+    "oneMonth": "1 Month",
+    "lifetime": "Lifetime",
+    "mostPopular": "Recommended",
+    "plusMore": "+N more",
+    "monthlySuffix": "monthly",
+    "lifetimeSuffix": "lifetime",
+    "saveAmount": "Pay once, use forever",
+    "selectPlanAria": "Select plan length"
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Page not found",
+    "description": "That URL does not exist or may have moved. Head back to the homepage or browse the products.",
+    "metaDescription": "The page you requested could not be found on bo7hacks.org.",
+    "metaTitleSuffix": "Page not found",
+    "backHome": "Back to home",
+    "viewProducts": "View products",
+    "openForum": "Open the forum"
+  },
+  "status": {
+    "eyebrow": "Patch notes",
+    "title": "Black Ops 7 module status",
+    "subtitle": "Check after every RICOCHET or client update before you launch.",
+    "breadcrumb": "Status",
+    "aceReminderLabel": "RICOCHET reminder",
+    "recentTitle": "Recent updates",
+    "activeLinePrefix": "Last checked",
+    "storeLineup": "Store lineup",
+    "latestLabel": "Latest"
+  },
+  "forum": {
+    "eyebrow": "Community",
+    "title": "BO7 Hacks community discussions",
+    "subtitle": "Example discussions about Black Ops 7 hack features and gameplay, with sample replies and linked guides.",
+    "breadcrumb": "Forum",
+    "postsAria": "Community posts",
+    "sortAria": "Post sorting",
+    "searchPlaceholder": "Search discussions",
+    "searchAria": "Search discussions",
+    "voteAria": "Discussion voting",
+    "fromGuide": "From the guide:",
+    "comments": "comments",
+    "readDiscussion": "Read discussion",
+    "readGuide": "Read the guide",
+    "basedOn": "Based on:",
+    "paginationAria": "Discussion pages",
+    "previousPage": "Previous",
+    "nextPage": "Next",
+    "exploreGuides": "Explore the guides",
+    "sortPopular": "Popular",
+    "sortLatest": "Latest",
+    "sortTop": "Most discussed",
+    "filterAria": "Filter discussions by topic",
+    "allTopics": "All topics",
+    "discussionOne": "discussion",
+    "discussionMany": "discussions",
+    "emptyFilter": "No discussions match. Try another search or topic.",
+    "colThread": "Thread",
+    "colReplies": "Replies",
+    "replyOne": "Reply",
+    "colVotes": "Votes",
+    "colLastReply": "Last reply",
+    "closedThread": "Answered",
+    "noRepliesYet": "No replies yet",
+    "previous": "Previous",
+    "next": "Next",
+    "sidebarAboutTitle": "Forum: Black Ops 7 community",
+    "sidebarAboutCopy": "Example BO7 Hacks discussions covering the eight features, game mechanics and product questions. These threads illustrate common questions.",
+    "sidebarTopics": "topics",
+    "sidebarExploreGuides": "Explore all guides",
+    "sidebarCommunities": "Communities",
+    "sidebarBrowseQa": "Browse related threads",
+    "sidebarBrowseAll": "Browse all communities",
+    "sidebarGuidelines": "Community guidelines",
+    "guideline1": "Keep it friendly and constructive",
+    "guideline2": "Stay on topic and add context",
+    "guideline3": "Mark spoilers and sensitive content",
+    "sidebarReadGuidelines": "Read the full guidelines",
+    "sidebarFootAbout": "About · Guidelines · Privacy · Terms",
+    "upvoteAria": "Upvote this discussion",
+    "downvoteUnavailable": "Downvoting is unavailable",
+    "showingRange": "Showing {from}–{to} of {total}",
+    "zeroDiscussions": "0 discussions",
+    "developerFlair": "Developer",
+    "points": "points",
+    "previewDiscussion": "Preview discussion",
+    "postingUnavailable": "Posting and voting are unavailable here",
+    "commentsTitle": "Comments",
+    "commentsSubtitle": "Example replies for this discussion",
+    "detailInTopic": "in this topic",
+    "detailBrowse": "Browse discussions",
+    "detailMoreTitle": "More discussions",
+    "detailViewAll": "View all discussions"
+  },
+  "readingTools": {
+    "copyLink": "Copy link",
+    "backToTop": "Back to top",
+    "copied": "Copied"
+  },
+  "blogArticle": {
+    "viewProducts": "View products",
+    "moreArticles": "More articles",
+    "imagePlaceholder": "Image placeholder",
+    "breadcrumbBlog": "Blog"
+  },
+  "breadcrumbs": {
+    "home": "Main page",
+    "products": "Pricing",
+    "blog": "Guide index",
+    "forum": "Threads",
+    "faq": "Questions",
+    "status": "Status page"
+  },
+  "faqPage": {
+    "eyebrow": "Help center",
+    "title": "FAQ: Plans, Setup and RICOCHET Risk Before You Buy",
+    "subtitle": "This FAQ covers plans, setup, and RICOCHET risk before checkout, including the loader, spoofer, and account tool.",
+    "schemaName": "FAQ — BO7 Hacks & Products",
+    "schemaDescription": "Answers about BO7 Hacks, the HWID spoofer, UGC recovery, RICOCHET risk, and checkout on bo7hacks.org."
+  },
+  "siteFaqSection": {
+    "allTopicsEyebrow": "All topics",
+    "allTopicsTitle": "Faq: Browse by category",
+    "allTopicsSubtitle": "Plans, cheat modules, the loader, the spoofer, UGC, and setup.",
+    "contextualEyebrow": "FAQ",
+    "contextualTitle": "Questions about this page",
+    "contextualSubtitle": "Answers tied to what you are reading—visit the FAQ page for every topic."
+  },
+  "catalog": {
+    "viewDetails": "View details",
+    "buyNow": "Buy now",
+    "recommended": "Recommended",
+    "mostPopular": "Recommended",
+    "popular": "Popular",
+    "plusMore": "+{count} more",
+    "monthlySuffix": "monthly",
+    "lifetimeSuffix": "lifetime",
+    "saveAmount": "Pay once, use forever",
+    "selectPlanAria": "Select plan length",
+    "utilityLabel": "Utility",
+    "atAGlance": "At a glance",
+    "keyCapabilities": "Key capabilities",
+    "focusesBefore": "What {name} focuses on before you open the full module list.",
+    "moreModules": "Plus {count} additional modules in the operator portal—see the full list below.",
+    "allModules": "All modules",
+    "modulesEyebrow": "Modules",
+    "whatsIncluded": "What's included",
+    "moduleNote": "Every module shipped with {name}.",
+    "optionOne": "option",
+    "optionMany": "options",
+    "experienceEyebrow": "Experience",
+    "inTheClient": "In the client · After you buy",
+    "experienceSubtitle": "Use the screenshots above for {name}—below is what each layer means and how access works after checkout.",
+    "inGameLayers": "In-game layers",
+    "layerLabel": "Layer {label}",
+    "previewLabel": "Getting started",
+    "accessLabel": "",
+    "overviewEyebrow": "Overview",
+    "overviewDesc": "What this product includes and how delivery works on Windows PC.",
+    "productDescription": "Product description",
+    "showMore": "Show more",
+    "showLess": "Show less",
+    "guidesEyebrow": "Guides",
+    "learnMore": "Learn more about {name}",
+    "guidesDesc": "Curated articles for setup, tuning, and patch-day checks that match this product."
+  },
+  "blogSidebar": {
+    "ariaLabel": "Article sidebar",
+    "inThisArticle": "In this article",
+    "relatedGuides": "Related guides",
+    "ourProducts": "Our products",
+    "allArticles": "All articles",
+    "productCheats": "BO7 Hacks",
+    "allProducts": "All products",
+    "hwidSpoofer": "HWID Spoofer",
+    "ugcRecovery": "UGC Account recovery",
+    "tocAria": "Table of contents",
+    "tocFallbackLabel": "Start of article",
+    "quickFactsTitle": "Quick facts",
+    "quickFactsAntiCheat": "RICOCHET",
+    "quickFactsPlatform": "Windows PC",
+    "quickFactsPlans": "Plans $35 / $150",
+    "quickFactsSupport": "Support: Discord",
+    "quickFactsCheckStatus": "Check status",
+    "quickFactsViewProduct": "View BO7 Hacks",
+    "utilityGuides": "HWID spoofer guides",
+    "moreGuides": "More guides"
+  },
+  "statusPage": {
+    "h1": "BO7 Hacks Status",
+    "intro": "Check this page before you launch Black Ops 7 after any Black Ops 7 patch or RICOCHET update. The badge shows whether the current build is ready, updating or paused.",
+    "buildTitle": "Current Black Ops 7 build",
+    "requirementsTitle": "Requirements",
+    "patchesTitle": "Recent game patches",
+    "patchesSource": "Source: Black Ops 7 official patch notes.",
+    "cheatUpdatesTitle": "Cheat updates",
+    "cheatUpdatesEmpty": "No updates posted yet",
+    "banRiskTitle": "Ban risk",
+    "buyLabel": "Buy BO7 Hacks"
+  }
+}
